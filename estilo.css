@@ -1,0 +1,532 @@
+/*General*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url(/imagenes/21omxpw-768x480.jpg);
+  background-size: cover;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #a30000;
+  text-align: center;
+  font-size: 2.3rem;
+}
+
+h2 {
+  color: #1d01f1;
+  text-align: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+
+/*inicio index*/
+/*inicio navbar*/
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: black;
+  background: #222020;
+  background: radial-gradient(circle, #222020 1%, #585858 71%, rgba(33, 45, 108, 0.947683) 87%);
+}
+
+.navbar img {
+  width: 30%;
+}
+
+.navbar-brand {
+  margin: 10px;
+  box-shadow: -9px 9px 26px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -9px 9px 26px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -9px 9px 26px -6px rgba(0, 0, 0, 0.75);
+}
+
+/*fin navbar*/
+/*inicio banner*/
+.banner {
+  background-image: url(/imagenes/fotopaginaweb.jpg);
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  border-style: double;
+}
+
+h1 {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: slidein;
+          animation-name: slidein;
+}
+
+@-webkit-keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.titulobanner {
+  background: #585858;
+  background: radial-gradient(circle, #585858 25%, #222020 66%);
+  -webkit-box-shadow: 2rem #040404;
+          box-shadow: 2rem #040404;
+  color: #19169e;
+}
+
+/*fin banner*/
+/*section productos destacados*/
+.tituloprod {
+  background-image: -webkit-gradient(linear, top black, from(#111182));
+  background-image: linear-gradient(to top black, #111182);
+  text-align: center;
+}
+
+/*galeria grid proddestacados*/
+.col {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.col img {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  box-shadow: 25px 24px 23px -10px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: 25px 24px 23px -10px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 25px 24px 23px -10px rgba(0, 0, 0, 0.76);
+}
+
+/*section 2 informacion*/
+.informacion {
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.informacion p {
+  color: #fff;
+  text-align: justify;
+}
+
+.informacion__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3rem;
+}
+
+.imagen {
+  width: 80%;
+}
+
+.informacion__container--reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+/*section 3 dudasyconsultas*/
+.sectiondudas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 2fr;
+      grid-template-columns: 2fr 2fr;
+  gap: 1em;
+}
+
+.dudasyconsultas {
+  width: 100%;
+}
+
+.masinfo {
+  display: inline-block;
+  background-color: #050505;
+  color: #fff;
+  text-decoration: none;
+  padding: 20px 50px;
+  border: 3px solid #3c67e3;
+  border-radius: 10px;
+  margin: 5rem;
+}
+
+.masinfo:hover {
+  -webkit-animation: pulsate 2s ease-in-out;
+          animation: pulsate 2s ease-in-out;
+}
+
+@-webkit-keyframes pulsate {
+  0% {
+    -webkit-box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+            box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    -webkit-box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+            box-shadow: 0 0 25px #5ddcff, 0 0 50px #4e00c2;
+  }
+}
+
+/*Footer*/
+footer {
+  background-image: url(/imagenes/blurry-gradient-haikei.svg);
+  background-size: cover;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "preguntas logofooter redes";
+  -ms-grid-columns: 2fr 0.5fr 2fr;
+      grid-template-columns: 2fr 0.5fr 2fr;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+.logofooter {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: logofooter;
+  width: 6%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.preguntas {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: preguntas;
+  margin: 2rem;
+}
+
+.preguntas ul {
+  color: #fff;
+  border-color: #000000;
+  border-style: double;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.preguntas ul li {
+  list-style: circle;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.preguntas ul li a {
+  text-decoration: none;
+  color: #c9c9c9;
+}
+
+.preguntas ul li a:hover {
+  color: #19169e;
+}
+
+.redes {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: redes;
+  text-align: center;
+  margin: 2rem;
+  font-size: 2rem;
+  border-style: double;
+  border-color: #000000;
+  gap: 3rem;
+}
+
+.redes h3 {
+  font-size: 2rem;
+  color: #eaeaea;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 2rem;
+}
+
+.redes a {
+  text-decoration: none;
+  color: #cccccc;
+}
+
+.redes a:hover {
+  color: #110eab;
+}
+
+.fa-whatsapp {
+  color: white;
+  background-color: #3ec34f;
+  padding: 2rem;
+  font-size: 3rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+}
+
+.fa-whatsapp::before {
+  -webkit-box-shadow: 0 0 60px rgba(50, 255, 132, 0.64);
+          box-shadow: 0 0 60px rgba(50, 255, 132, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 1;
+  -webkit-transition: all .3s ease-in-out 0s;
+  transition: all .3s ease-in-out 0s;
+}
+
+.fa-whatsapp:hover, .button:focus {
+  color: #313133;
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+}
+
+.fa-whatsapp:hover::before, button:focus::before {
+  opacity: 1;
+}
+
+.fa-whatsapp::after {
+  content: '';
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 6px solid #01c057;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation: ring 1.5s infinite;
+          animation: ring 1.5s infinite;
+}
+
+.fa-whatsapp:hover::after, button:focus::after {
+  -webkit-animation: none;
+          animation: none;
+  display: none;
+}
+
+@-webkit-keyframes ring {
+  0% {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+  }
+}
+
+@keyframes ring {
+  0% {
+    width: 10px;
+    height: 10px;
+    opacity: 1;
+  }
+  100% {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /*index*/
+  /*section productos destacados*/
+  .tituloprod {
+    background-color: #c3c3c3;
+    border-style: double;
+    text-align: center;
+  }
+  /*section 2 informacion*/
+  .informacion {
+    width: 80%;
+    margin: 2rem auto;
+    gap: 5rem;
+  }
+  .informacion p {
+    color: #fff;
+    text-align: justify;
+    margin: 2rem;
+  }
+  .informacion__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 3rem;
+  }
+  .imagen {
+    width: 100%;
+  }
+  .informacion__container--reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  /*section 3 dudasyconsultas*/
+  .sectiondudas {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 2fr;
+        grid-template-columns: 2fr 2fr;
+    gap: 1em;
+  }
+  .dudasyconsultas {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  /*index*/
+  /*section 2 informacion*/
+  .informacion p {
+    color: #fff;
+    text-align: justify;
+    margin: 2rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  /*index*/
+  /*section productos destacados*/
+  .tituloprod {
+    background-color: #c3c3c3;
+    border-style: double;
+    text-align: center;
+  }
+  /*section 2 informacion*/
+  .informacion {
+    display: block;
+    width: 100%;
+    margin: 2rem auto;
+  }
+  .informacion p {
+    color: #fff;
+    text-align: justify;
+    gap: 3rem;
+  }
+  /*section 3 dudasyconsultas*/
+  .sectiondudas {
+    display: block;
+    text-align: justify;
+  }
+  /*Footer*/
+  footer {
+    display: -ms-grid;
+    display: grid;
+    width: 100%;
+        grid-template-areas: "logofooter preguntas"  "redes redes";
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 1fr 1fr;
+    background-color: #64616b;
+    border-radius: 5px;
+    padding: 1rem;
+    opacity: 0.8;
+    margin-top: 4rem;
+  }
+  .logofooter {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: logofooter;
+    width: 8rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .preguntas {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: preguntas;
+    margin: 2rem;
+  }
+  .preguntas ul {
+    border-style: double;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
+  .preguntas ul li {
+    list-style: circle;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+  }
+  .preguntas ul li a {
+    text-decoration: none;
+    color: #050505;
+  }
+  .preguntas ul li a:hover {
+    color: #19169e;
+  }
+  .redes {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: redes;
+    text-align: center;
+    margin: 2rem;
+    font-size: 2rem;
+    border-style: double;
+    gap: 3rem;
+  }
+  .redes h3 {
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 2rem;
+  }
+  .redes a {
+    text-decoration: none;
+    color: #040404;
+  }
+  .redes a:hover {
+    color: #110eab;
+  }
+  /*fin footer*/
+}
+/*# sourceMappingURL=estilo.css.map */
