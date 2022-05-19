@@ -2,8 +2,8 @@
 $imagenbg:url(imagenes/21omxpw-768x480.jpg);
 
 @mixin parrafo($fondo) {
-    font-family: Arial, Helvetica, sans-serif,
-    font-size: medium,
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
     text-align: justify;
 }
 
@@ -15,8 +15,6 @@ $palette: (
 
 body{
     background-image: $imagenbg;
-    background-size: cover;
-    font-family: 'Sans Pro', sans-serif;
 }
 h1{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -454,11 +452,3 @@ p{
     display: block;
 } 
 }
-.produc{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 
-    minmax(200px, 1fr));
-    gap: 20px;
-}
-
-
